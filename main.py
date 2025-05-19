@@ -37,9 +37,9 @@ getstatusoutput(f"wget {photo1} -O 'photo.jpg'")
 photo = "photo.jpg"
 
 
-token_cp = 'your cp token'
+token_cp = 'eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTE5MDkwMzIzLCJvcmdJZCI6Mzc5NzI3LCJ0eXBlIjoxLCJtb2JpbGUiOiI5MTkwMDk1MzE0MjIiLCJuYW1lIjoiUGlrZXNoIE1hcmthbSIsImVtYWlsIjoicGlrZXNobWFya2FtMDQwQGdtYWlsLmNvbSIsImlzSW50ZXJuYXRpb25hbCI6MCwiZGVmYXVsdExhbmd1YWdlIjoiRU4iLCJjb3VudHJ5Q29kZSI6IklOIiwiY291bnRyeUlTTyI6IjkxIiwidGltZXpvbmUiOiJHTVQrNTozMCIsImlzRGl5IjpmYWxzZSwib3JnQ29kZSI6InJmcW5iIiwiaXNEaXlTdWJhZG1pbiI6MCwiZmluZ2VycHJpbnRJZCI6Ijg4YzYyZTNmMDcwZTRkYTNhZTU4NjhhOTExZDU1ZWY1IiwiaWF0IjoxNzQ3MzcwODM0LCJleHAiOjE3NDc5NzU2MzR9.wPICfH9phPxIhbS1_01G4bexOrrV6KJr7-y7G_QeIRx589b_PmaStnHrhbB1UPRl'
 
-@bot.on_message(filters.command(["start"]) & filters.user(owner_id))
+@bot.on_message(filters.command(["start"]) & filters.user(6977768796)
 async def account_login(bot: Client, m: Message):
     await m.reply_text(f"**Hello Bruh** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n>>I am TXT file Downloader Bot.\n>>Send me /txt Command And Follow Steps\nIf You Want To Stop Me Just Send /stop to stop me 😎")
 
